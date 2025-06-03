@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AttendEasy"
+        tools:targetApi="31">
+        <activity
+            android:name=".AddSemester"
+            android:exported="false" />
+        <activity
+            android:name=".AddSubject"
+            android:exported="false" />
+        <activity
+            android:name=".AddDepartment"
+            android:exported="false" />
+        <activity
+            android:name=".AddBottomSheet"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDepartmentScreen"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.ManageTeacherAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ManageTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".AddStudent"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.ManageStudentAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MamageStudent"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackHelp"
+            android:exported="false" />
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".model.AttendanceReport"
+            android:exported="false" />
+        <activity
+            android:name=".model.AttendanceRecord"
+            android:exported="false" />
+        <activity
+            android:name=".model.ReportModel"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.ReportAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.AttendanceSumaryAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".model.AttendanceSummary"
+            android:exported="false" />
+        <activity
+            android:name=".AttendanceDetail"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.AttendanceSummaryAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".adapter.StudentAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MarkAttendanceSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MarkAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.TeacherMoreFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.TeacherProfileFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.TeacherHomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.StudentMoreFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.StudentProfileFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ViewNotes"
+            android:exported="false" />
+        <activity
+            android:name=".View"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.StudentHomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.MoreFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.ProfileFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.HomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Logout"
+            android:exported="false" />
+        <activity
+            android:name=".StudentViewAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".AddAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".AddNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Contents"
+            android:exported="false" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".MarkAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterStudent"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomePage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Setting"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateReport"
+            android:exported="false" />
+        <activity
+            android:name=".ApproveTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".StudentEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherWaitingScreen"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherHomescreen"
+            android:exported="false" />
+        <activity
+            android:name=".StudentHomescreen"
+            android:exported="false" />
+        <activity
+            android:name=".ReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageTeachersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageStudentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomescreen"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

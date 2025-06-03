@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Card background -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M3,4h18a1,1 0 0 1 1,1v14a1,1 0 0 1 -1,1H3a1,1 0 0 1 -1,-1V5a1,1 0 0 1 1,-1z" />
+
+    <!-- Circle photo -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,8a2,2 0 1,1 -4,0 2,2 0 0,1 4,0z" />
+
+    <!-- Line for name -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8,13h8v1.5H8z" />
+
+    <!-- Line for roll number -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8,16h6v1.5H8z" />
+</vector>

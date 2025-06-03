@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <!-- Toolbar with Back Arrow and Title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorEdgeEffect"
+        android:elevation="4dp"
+        app:titleTextColor="@android:color/white">
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:layout_marginBottom="2dp" />
+    </androidx.appcompat.widget.Toolbar>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="65dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_profile_placeholder"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profile Picture" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="student@example.com"
+            android:textSize="16sp"
+            android:textColor="@color/darker_gray"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Details Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg_input">
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/tvPhone"
+                style="@style/ProfileItemStyle"
+                android:text="Phone Number" />
+
+            <!-- Roll Number -->
+            <TextView
+                android:id="@+id/tvRollNumber"
+                style="@style/ProfileItemStyle"
+                android:layout_marginTop="8dp"
+                android:text="Roll Number" />
+
+            <!-- Department -->
+            <TextView
+                android:id="@+id/tvDepartment"
+                style="@style/ProfileItemStyle"
+                android:layout_marginTop="8dp"
+                android:text="Department" />
+
+            <!-- Semester -->
+            <TextView
+                android:id="@+id/tvSemester"
+                style="@style/ProfileItemStyle"
+                android:layout_marginTop="8dp"
+                android:text="Semester" />
+
+            <!-- Subjects -->
+            <TextView
+                android:id="@+id/tvSubjectList"
+                style="@style/ProfileItemStyle"
+                android:layout_marginTop="8dp"
+                android:text="Subjects" />
+
+            <!-- Batch
+            <TextView
+                android:id="@+id/tvBatch"
+                style="@style/ProfileItemStyle"
+                android:layout_marginTop="8dp"
+                android:text="Batch Year" /> -->
+
+            <!-- Gender -->
+            <TextView
+                android:id="@+id/tvGender"
+                style="@style/ProfileItemStyle"
+                android:layout_marginTop="8dp"
+                android:text="Gender" />
+
+            <!-- Date of Birth -->
+            <TextView
+                android:id="@+id/tvDob"
+                style="@style/ProfileItemStyle"
+                android:layout_marginTop="8dp"
+                android:text="Date of Birth" />
+
+            <!-- Attendance Percentage -->
+            <TextView
+                android:id="@+id/tvattendandePercentage"
+                style="@style/ProfileItemStyle"
+                android:layout_marginTop="8dp"
+                android:text="Attendance Percentage" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

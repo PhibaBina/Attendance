@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">AttendEasy</string>
+
+
+    <string-array name="role">
+        <item>Teacher</item>
+        <item>Student</item>
+    </string-array>
+    <string-array name="filter_options">
+        <item>Group by Date</item>
+        <item>Group by Subject</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Toolbar with Back Arrow and Title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorEdgeEffect"
+        android:elevation="4dp"
+        app:titleTextColor="@android:color/white">
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:layout_marginBottom="2dp" />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/ivProfilePic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_profile_placeholder"
+                android:scaleType="centerCrop"
+                android:contentDescription="Profile Picture" />
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacher Name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="teacher@example.com"
+                android:textSize="16sp"
+                android:textColor="@color/darker_gray"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Details Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/bg_input">
+
+                <!-- Phone -->
+                <TextView
+                    android:id="@+id/tvPhone"
+                    style="@style/ProfileItemStyle"
+                    android:layout_marginTop="8dp"
+                    android:text="Phone Number" />
+
+                <!-- ID Number -->
+                <TextView
+                    android:id="@+id/tvIDNumber"
+                    style="@style/ProfileItemStyle"
+                    android:layout_marginTop="8dp"
+                    android:text="ID Number" />
+
+                <!-- Department -->
+                <TextView
+                    android:id="@+id/tvDepartment"
+                    style="@style/ProfileItemStyle"
+                    android:layout_marginTop="8dp"
+                    android:text="Department" />
+
+                <!-- Semester -->
+                <TextView
+                    android:id="@+id/tvSemester"
+                    style="@style/ProfileItemStyle"
+                    android:layout_marginTop="8dp"
+                    android:text="Semester" />
+
+                <!-- Subjects -->
+                <TextView
+                    android:id="@+id/tvSubjectList"
+                    style="@style/ProfileItemStyle"
+                    android:layout_marginTop="8dp"
+                    android:text="Subjects" />
+
+                <!-- Gender -->
+                <TextView
+                    android:id="@+id/tvGender"
+                    style="@style/ProfileItemStyle"
+                    android:layout_marginTop="8dp"
+                    android:text="Gender" />
+
+            </LinearLayout>
+
+            <!-- Edit Profile -->
+            <LinearLayout
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/textEditProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="Edit Profile"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/chevronIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_chevron_right"
+                     />
+            </LinearLayout>
+            <!-- Edit Profile -->
+            <LinearLayout
+                android:id="@+id/btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/textChangePassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="Change Password"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_chevron_right"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

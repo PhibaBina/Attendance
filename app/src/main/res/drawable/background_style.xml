@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+
+    <!-- Background Circle -->
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M150,0A150,150 0 1,1 0,150A150,150 0 1,1 150,0"/>
+
+    <!-- Mobile Device with Rounded Corners -->
+    <path
+        android:fillColor="#C2DBF8"
+        android:pathData="M95,50 h110 a15,15 0 0,1 15,15 v170 a15,15 0 0,1 -15,15 h-110 a15,15 0 0,1 -15,-15 v-170 a15,15 0 0,1 15,-15 z"/>
+
+    <!-- Mobile Screen -->
+    <path
+        android:fillColor="#E5F1FA"
+        android:pathData="M100,65 h100 v170 h-100 z"/>
+
+    <!-- Checkmark on Screen -->
+    <path
+        android:fillColor="#E5F2E6"
+        android:strokeWidth="4"
+        android:pathData="M110,140 L130,160 L160,120"
+        android:strokeColor="#CDFBCF" />
+
+    <!-- Person Icon (Head) as a Path -->
+
+    <!-- Person Body -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M130,200 L170,200 L160,230 L140,230 Z" />
+
+</vector>

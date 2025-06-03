@@ -1,0 +1,47 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Department Name -->
+        <EditText
+            android:id="@+id/etDepartmentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Department Name"
+            android:padding="12dp"
+            android:background="@drawable/bg_input"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Button to add semester -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddSemester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Semester"
+            android:backgroundTint="#A5D6A7"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Semester list container -->
+        <LinearLayout
+            android:id="@+id/semesterContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <!-- Save Department -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSaveDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#81C784" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "967408515124",
+    "project_id": "attendance-12338",
+    "storage_bucket": "attendance-12338.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967408515124:android:fb6e329edf2cbcebd7f261",
+        "android_client_info": {
+          "package_name": "com.pbina.attendeasy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUAaeKFo9xDgvIo93oV4wDcxnWVoAVxOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

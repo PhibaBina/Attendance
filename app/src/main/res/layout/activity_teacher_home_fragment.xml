@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.TeacherHomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorEdgeEffect"
+        android:elevation="4dp"
+        app:titleTextColor="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AttendEasy"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_gravity="start"
+            android:layout_marginBottom="2dp" />
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:id="@+id/illustration"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:src="@drawable/illustration"
+        android:scaleType="fitCenter"
+        android:contentDescription="Education Illustration"
+        android:layout_marginTop="70dp"/>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="250dp">
+
+        <!-- Grid Layout -->
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/illustration"
+            android:layout_centerHorizontal="true"
+            android:columnCount="2"
+            android:padding="20dp">
+
+            <!-- Attendance -->
+            <LinearLayout
+                android:id="@+id/btnAttendance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/attend"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Mark Attendance"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <!-- Contents -->
+            <LinearLayout
+                android:id="@+id/btnContents"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/notes"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contents"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <!-- Routine -->
+            <LinearLayout
+                android:id="@+id/btnRoutine"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/routine"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+            <!-- Report -->
+            <LinearLayout
+                android:id="@+id/btnReport"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/report"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Report"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#4CAF50</color>
+    <color name="primaryDarkColor">#388E3C</color>
+    <color name="accentColor">#FF5722</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#2196F3</color>  <!-- Adjust shade as needed -->
+    <color name="darker_gray">#757575</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="colorPrimary">#3F51B5</color> <!-- A blue color for the primary theme -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Darker shade of blue -->
+    <color name="colorAccent">#FF4081</color> <!-- Pink accent color -->
+    <color name="textColor">#212121</color> <!-- Dark text color -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Light background color -->
+    <color name="light_green">#A5D6A7</color>
+        <color name="light_blue">#81D4FA</color>
+
+
+</resources>

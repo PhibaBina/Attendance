@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+
+    <!-- Item 1: View Attendance -->
+    <LinearLayout
+        android:id="@+id/btn_view_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_mark_attendance"
+            android:contentDescription="Attendance Icon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Attendance"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Item 2: View Assignments -->
+    <LinearLayout
+        android:id="@+id/btn_view_assignments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/notes"
+            android:contentDescription="Assignment Icon"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Assignments"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Item 3: View Notes -->
+    <LinearLayout
+        android:id="@+id/btn_view_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/notes"
+            android:contentDescription="Notes Icon"
+       />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Notes"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Item 4: View Report
+    <LinearLayout
+        android:id="@+id/btn_view_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/report"
+            android:contentDescription="Report Icon"
+/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Report"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:textColor="#000000" />
+    </LinearLayout>-->
+
+</LinearLayout>
